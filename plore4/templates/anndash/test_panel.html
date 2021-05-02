@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Test Panel</h1>
+    <div class="w3-card w3-center">
+        <a href="{% url 'newcondition' %}" class="w3-btn">Create Condition</a>
+        <a href="{% url 'allconditions' %}" class="w3-btn">View Conditions</a>
+        <a href="{% url 'newconditionmeta' %}" class="w3-btn">Create Condition Meta</a>
+        <a href="{% url 'allconditionmetas' %}" class="w3-btn">View Conditions Metas</a>
+    </div>
+{% endblock %}

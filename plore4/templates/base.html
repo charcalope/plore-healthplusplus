@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plore</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <style>
+        .testa {
+            background-image: url('sidebar.svg');
+            height: 300px;
+        }
+    </style>
+</head>
+<body style="">
+
+    <div class="w3-row">
+        <div class="w3-col s3 w3-center" style="background-image: linear-gradient(#397163, #48C3A6); height: 1000px; color: white">
+            <h1 style="font-family: 'Poppins', sans-serif; margin-bottom: 80px">Plore</h1>
+            <div style="border: white 2px solid; border-radius: 10px; width: 70%; margin-left: 60px; padding: 10px; margin-bottom: 15px">
+                    <a href="{% url 'landing' %}" style="text-decoration: none">Landing</a>
+                </div>
+            <div style="border: white 2px solid; border-radius: 10px; width: 70%; margin-left: 60px; padding: 10px; margin-bottom: 15px">
+                    <a href="{% url 'annotate' %}" style="text-decoration: none">Annotation Demo</a>
+                </div>
+            <div style="border: white 2px solid; border-radius: 10px; width: 70%; margin-left: 60px; padding: 10px; margin-bottom: 15px">
+                    <a href="{% url 'profilex' %}" style="text-decoration: none">Profile Demo</a>
+                </div>
+        </div>
+        <div class="w3-col s9">
+                {% block content %}
+                {% endblock %}
+        </div>
+    </div>
+
+</body>
+</html>

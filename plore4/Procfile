@@ -1,0 +1,1 @@
+web: gunicorn plore4.wsgi --log-file -

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h2>All Conditions</h2>
+    <div>
+        {% for condition_meta in conditions_metas %}
+            <div>
+                <h3>{{ condition_meta.condition.title }}</h3>
+            </div>
+
+        {% endfor %}
+    </div>
+
+{% endblock %}

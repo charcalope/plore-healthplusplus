@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 style="margin-left: 90px; margin-top: 20px; font-family: 'Poppins', sans-serif">Condition X Dashboard</h1>
+     <div class="w3-card" style="width: 85%; margin: 50px; height: 800px; border-radius: 20px; margin-left: 90px; background-color: #4E5A5F">
+        <div class="w3-row" style="border-bottom: lightgray 2px solid; background-color: darkslategrey; color: white; font-family: 'Poppins', sans-serif">
+            <div class="w3-col s4 w3-btn">
+                <h3><a href="{% url 'identify' %}" style="text-decoration: none; font-family: 'Poppins', sans-serif">Identify</a></h3>
+            </div>
+            <div class="w3-col s4 w3-btn">
+                <h3><a href="{% url 'annotate' %}" style="text-decoration: none; font-family: 'Poppins', sans-serif">Annotate</a></h3>
+            </div>
+            <div class="w3-col s4 w3-btn">
+                <h3><a href="{% url 'summarize' %}" style="text-decoration: none; font-family: 'Poppins', sans-serif">Summarize</a></h3>
+            </div>
+        </div>
+        <div class="w3-row" style="padding: 40px; color: white">
+            <h3 style="margin-bottom: 30px">Annotate The Article</h3>
+            <div class="w3-row">
+                <div class="w3-col s6" style="border: lightgray 2px solid; padding: 10px; border-radius: 10px; height: 500px">
+                    <h4>Titles of Scientific Articles Are Typically Long So This is Too</h4>
+                    <p>Author A, Author B, Author C, Author D | Pub. 2021, Nature</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="w3-col s6" style="padding-left: 20px; padding-right: 20px">
+                    <h4>New Recommendation</h4>
+                    <div class="w3-row">
+                        <h5>Demographics</h5>
+                        <div class="w3-col s10">
+                            <div style="border: lightgray 2px solid; padding: 5px">
+                                <div style="border-radius: 10px; background-color: blue; color: white" class="w3-btn">
+                                    Demographic
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-col s2">
+                            <div class="w3-btn w3-blue" style="border-radius: 10px; margin: 5px">
+                                Add new
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-row">
+                        <h5>Context</h5>
+                        <div class="w3-col s10">
+                            <div style="border: lightgray 2px solid; padding: 5px">
+                                <div style="border-radius: 10px; background-color: mediumpurple; color: white" class="w3-btn">
+                                    Context
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-col s2">
+                            <div class="w3-btn w3-blue" style="border-radius: 10px; margin: 5px">
+                                Add new
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-row">
+                        <h5>Treatment</h5>
+                        <div class="w3-col s10">
+                            <div style="border: lightgray 2px solid; padding: 5px">
+                                <div style="border-radius: 10px; background-color: darkseagreen; color: white" class="w3-btn">
+                                    Treatment
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-col s2">
+                            <div class="w3-btn w3-blue" style="border-radius: 10px; margin: 5px">
+                                Add new
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-row w3-center" style="margin: 20px">
+                        <div class="w3-btn w3-red">
+                            Submit Recommendation
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

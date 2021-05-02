@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h2>All Conditions</h2>
+    <div>
+        {% for condition in conditions %}
+            <div>
+                <h3>{{ condition.title }}</h3>
+            </div>
+
+        {% endfor %}
+    </div>
+
+{% endblock %}
